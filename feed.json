@@ -1,0 +1,14 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Przewodnik po Pustkowie",
+    "description": "",
+    "home_page_url": "https://pustkowo.org",
+    "feed_url": "https://pustkowo.org/feed.json",
+    "user_comment": "",
+    "icon": "https://pustkowo.org/media/website/pustkowo_logo_lichen_bottom.svg",
+    "author": {
+        "name": "Ka 𓂓"
+    },
+    "items": [
+    ]
+}
