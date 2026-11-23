@@ -1,3 +1,4 @@
 User-agent: *
 Disallow:
 Sitemap: https://pustkowo.org/sitemap.xml
+Sitemap: https://pustkowo.org/en/sitemap.xml
