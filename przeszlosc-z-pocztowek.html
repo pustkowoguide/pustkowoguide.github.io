@@ -642,9 +642,9 @@ html.pk-lock,html.pk-lock body{overflow:hidden}</style><script>(function(){
 
   var box=document.createElement('div');
   box.id='pk-intro'; box.className='pk-waiting'+(tall?' pk-tall':'');
-  box.innerHTML=
+   box.innerHTML=
     '<div class="pk-stage">'+
-      '<img src="'+STILL+'" alt="">'+
+      '<img src="'+STILL+'" alt="" fetchpriority="high" decoding="async">'+
       '<video class="pk-loop" playsinline muted loop autoplay preload="auto" poster="'+STILL+'"><source src="'+LOOP+'" type="video/mp4"></video>'+
             '<video class="pk-main" playsinline preload="metadata"><source src="'+VIDEO+'" type="video/mp4"></video>'+
       '<div class="pk-sub notranslate" translate="no" aria-label="'+T.sub+'">'+letters+'</div>'+
