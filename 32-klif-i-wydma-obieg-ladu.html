@@ -693,9 +693,6 @@ html.pk-lock,html.pk-lock body{overflow:hidden}</style><script>(function(){
     '<button type="button" class="pk-ctrl pk-skip">'+T.skip+' &rarr;</button>'+
     '<div class="pk-nextwrap"><button type="button" class="pk-next">'+T.next+' &nbsp;&#8595;</button></div>';
     document.body.appendChild(box);
-  var pkWait = document.getElementById('pk-wait');
-  if (pkWait) pkWait.parentNode.removeChild(pkWait);
-  document.documentElement.classList.remove('pk-wait');
   document.documentElement.classList.add('pk-lock');
   box.classList.remove('pk-waiting'); void box.offsetWidth; box.classList.add('pk-waiting');
 
@@ -724,7 +721,10 @@ html.pk-lock,html.pk-lock body{overflow:hidden}</style><script>(function(){
     var k=0, a=v.volume, b=lp.volume;
     var fade=setInterval(function(){ k++; v.volume=Math.max(0,a*(1-k/12)); lp.volume=Math.max(0,b*(1-k/12)); if(k>=12){clearInterval(fade); v.pause(); lp.pause();} },80);
     box.classList.add('pk-out');
-    document.documentElement.classList.remove('pk-lock');
+        document.documentElement.classList.remove('pk-lock');
+    var pkWait = document.getElementById('pk-wait');
+    if (pkWait) pkWait.parentNode.removeChild(pkWait);
+    document.documentElement.classList.remove('pk-wait');
     setTimeout(function(){ if(box.parentNode) box.parentNode.removeChild(box); },1400);
   }
   box.querySelector('.pk-enter button').addEventListener('click',function(){
