@@ -1127,4 +1127,29 @@ roots.forEach(function(root){
  }
  draw();
 });
-});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "73ed6201f2434d339ec44208ecca38c5"}'></script></body></html>
+});</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "73ed6201f2434d339ec44208ecca38c5"}'></script><script>document.addEventListener('DOMContentLoaded', function () {
+  var box = document.querySelector('.pk-signup');
+  if (!box) return;
+  var isPL = (document.documentElement.lang || '').toLowerCase().indexOf('pl') === 0;
+  var T = isPL
+    ? { ph: 'Twój adres e-mail', btn: 'Zapisz się', ok: 'Dziękujemy! Sprawdź skrzynkę i potwierdź zapis.' }
+    : { ph: 'Your email address', btn: 'Subscribe', ok: 'Thank you! Check your inbox and confirm your subscription.' };
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://eomail5.com/form/f36c8b2e-e733-11f1-8525-3951c864474f.js';
+  s.setAttribute('data-form', 'f36c8b2e-e733-11f1-8525-3951c864474f');
+  box.insertBefore(s, box.firstChild);
+  function fix() {
+    box.querySelectorAll('input[type="email"]').forEach(function (i) {
+      if (i.placeholder !== T.ph) i.placeholder = T.ph;
+    });
+    box.querySelectorAll('.emailoctopus-form [type="submit"]').forEach(function (b) {
+      if (b.tagName === 'INPUT') { if (b.value !== T.btn) b.value = T.btn; }
+      else if (b.textContent !== T.btn) b.textContent = T.btn;
+    });
+    box.querySelectorAll('.emailoctopus-success-message').forEach(function (p) {
+      if (p.textContent.trim() && p.textContent !== T.ok) p.textContent = T.ok;
+    });
+  }
+  new MutationObserver(fix).observe(box, { childList: true, subtree: true, characterData: true });
+});</script></body></html>
