@@ -1171,7 +1171,9 @@ roots.forEach(function(root){
  /* list */
  var lw=document.createElement('div');lw.className='pk-rt-listwrap';lw.innerHTML='<button type="button" class="pk-rt-more" aria-expanded="false"></button><ol hidden></ol>';root.appendChild(lw);
  /* info strip */
- var info='<div class="pk-rt-info"><div class="pk-rt-stats"><div class="pk-rt-stat"><span>'+T.basic+'</span><b>'+D.basic+'</b></div><div class="pk-rt-stat"><span>'+D.ext[lang]+'</span><b>'+D.extKm[lang]+'</b></div>'+(D.surface?'<div class="pk-rt-stat"><span>'+T.surface+'</span><b>'+D.surface[lang]+'</b></div>':'')+'</div><a class="pk-rt-gpx" href="'+D.gpx[lang]+'" download>'+DL+T.gpx+'</a></div>';
+ var GL={"41":{"en":"4.1_Western_Route_long.gpx","pl":"4.1_Trasa_zachodnia_dluga.gpx"},"42":{"en":"4.2_Southern_Route_long.gpx","pl":"4.2_Trasa_poludniowa_dluga.gpx"}}[id];
+ var GT=lang==='pl'?['GPX: pętla podstawowa','GPX: pętla długa']:['GPX: basic loop','GPX: long loop'];
+ var info='<div class="pk-rt-info"><div class="pk-rt-stats"><div class="pk-rt-stat"><span>'+T.basic+'</span><b>'+D.basic+'</b></div><div class="pk-rt-stat"><span>'+D.ext[lang]+'</span><b>'+D.extKm[lang]+'</b></div>'+(D.surface?'<div class="pk-rt-stat"><span>'+T.surface+'</span><b>'+D.surface[lang]+'</b></div>':'')+'</div><div style="display:flex;flex-wrap:wrap;gap:10px"><a class="pk-rt-gpx" href="'+D.gpx[lang]+'" download>'+DL+GT[0]+'</a><a class="pk-rt-gpx" href="'+GL[lang]+'" download>'+DL+GT[1]+'</a></div></div>';
  root.insertAdjacentHTML('beforeend',info);
 
  /* zoom and pan: on phones a wide map fills a taller window and can be dragged sideways */
