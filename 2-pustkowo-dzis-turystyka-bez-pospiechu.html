@@ -1173,7 +1173,11 @@ roots.forEach(function(root){
  /* info strip */
  var GL={"41":{"en":"4.1_Western_Route_long.gpx","pl":"4.1_Trasa_zachodnia_dluga.gpx"},"42":{"en":"4.2_Southern_Route_long.gpx","pl":"4.2_Trasa_poludniowa_dluga.gpx"}}[id];
  var GT=lang==='pl'?['GPX: pętla podstawowa','GPX: pętla długa']:['GPX: basic loop','GPX: long loop'];
- var info='<div class="pk-rt-info"><div class="pk-rt-stats"><div class="pk-rt-stat"><span>'+T.basic+'</span><b>'+D.basic+'</b></div><div class="pk-rt-stat"><span>'+D.ext[lang]+'</span><b>'+D.extKm[lang]+'</b></div>'+(D.surface?'<div class="pk-rt-stat"><span>'+T.surface+'</span><b>'+D.surface[lang]+'</b></div>':'')+'</div><div style="display:flex;flex-wrap:wrap;gap:10px"><a class="pk-rt-gpx" href="'+D.gpx[lang]+'" download>'+DL+GT[0]+'</a><a class="pk-rt-gpx" href="'+GL[lang]+'" download>'+DL+GT[1]+'</a></div></div>';
+ var X={"41":{"time":{"en":"about 2 h · with Dziwnówek about 2 h 15 min","pl":"ok. 2 h · z Dziwnówkiem ok. 2 h 15 min"},"climb":{"en":"Flat, about 100 m of climbing","pl":"Płasko, ok. 100 m podjazdów"},"surf":{"en":"Forest tracks, asphalt, gravel; short sandy sections where you may need to push","pl":"Leśne drogi, asfalt, szuter; krótkie piaszczyste odcinki, na których czasem trzeba prowadzić rower"},"km":"https://www.komoot.com/tour/3405440250"},"42":{"time":{"en":"about 1 h · via Niczonów about 1 h 45 min","pl":"ok. 1 h · przez Niczonów ok. 1 h 45 min"},"climb":{"en":"Flat, about 70 m of climbing","pl":"Płasko, ok. 70 m podjazdów"},"surf":null,"km":"https://www.komoot.com/tour/3405444361"}}[id];
+ var XL=lang==='pl'?{t:'Czas jazdy (bez postojów)',c:'Teren',k:'Otwórz w komoot ↗'}:{t:'Riding time (without stops)',c:'Terrain',k:'Open in komoot ↗'};
+ var SF=D.surface||(X&&X.surf);
+ function stat(a,b){return '<div class="pk-rt-stat"><span>'+a+'</span><b>'+b+'</b></div>'}
+ var info='<div class="pk-rt-info"><div class="pk-rt-stats">'+stat(T.basic,D.basic)+stat(D.ext[lang],D.extKm[lang])+(X?stat(XL.t,X.time[lang])+stat(XL.c,X.climb[lang]):'')+(SF?stat(T.surface,SF[lang]):'')+'</div><div style="display:flex;flex-wrap:wrap;gap:10px"><a class="pk-rt-gpx" href="'+D.gpx[lang]+'" download>'+DL+GT[0]+'</a><a class="pk-rt-gpx" href="'+GL[lang]+'" download>'+DL+GT[1]+'</a>'+(X?'<a class="pk-rt-gpx" href="'+X.km+'" target="_blank" rel="noopener">'+XL.k+'</a>':'')+'</div></div>';
  root.insertAdjacentHTML('beforeend',info);
 
  /* zoom and pan: on phones a wide map fills a taller window and can be dragged sideways */
