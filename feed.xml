@@ -3,10 +3,31 @@
     <title>Przewodnik po Pustkowie</title>
     <link href="https://pustkowo.org/feed.xml" rel="self" />
     <link href="https://pustkowo.org" />
-    <updated>1970-01-01T01:00:00+01:00</updated>
+    <updated>2026-11-26T15:20:10+01:00</updated>
     <author>
         <name>Pustkowo Guide</name>
     </author>
     <id>https://pustkowo.org</id>
 
+    <entry>
+        <title>Co pominęły pocztówki: Hauptstraße w Pustchow</title>
+        <author>
+            <name>Pustkowo Guide</name>
+        </author>
+        <link href="https://pustkowo.org/what-the-postcards-left-out.html"/>
+        <id>https://pustkowo.org/what-the-postcards-left-out.html</id>
+        <media:content url="https://pustkowo.org/media/posts/32/pustchow-hauptstrasse-from-east-1938-2.jpg" medium="image" />
+            <category term="Zimdars"/>
+            <category term="Haus Kiese"/>
+            <category term="Hauptstrasse"/>
+
+        <updated>2026-11-26T14:47:58+01:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://pustkowo.org/media/posts/32/pustchow-hauptstrasse-from-east-1938-2.jpg" alt="" />
+                    Każda pocztówka jest reklamą. Ktoś wybiera miejsce, porę roku i napis, by uchwycić na kartce jeden widok, który goście wyślą&hellip;
+                ]]>
+            </summary>
+        <content></content>
+    </entry>
 </feed>

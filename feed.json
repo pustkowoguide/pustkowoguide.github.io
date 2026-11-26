@@ -10,5 +10,22 @@
         "name": "Pustkowo Guide"
     },
     "items": [
+        {
+            "id": "https://pustkowo.org/what-the-postcards-left-out.html",
+            "url": "https://pustkowo.org/what-the-postcards-left-out.html",
+            "title": "Co pominęły pocztówki: Hauptstraße w Pustchow",
+            "summary": "Każda pocztówka jest reklamą. Ktoś wybiera miejsce, porę roku i napis, by uchwycić na kartce jeden widok, który goście wyślą&hellip;",
+            "image": "https://pustkowo.org/media/posts/32/pustchow-hauptstrasse-from-east-1938-2.jpg",
+            "author": {
+                "name": "Pustkowo Guide"
+            },
+            "tags": [
+                   "Zimdars",
+                   "Haus Kiese",
+                   "Hauptstrasse"
+            ],
+            "date_published": "2026-11-26T14:47:58+01:00",
+            "date_modified": "2026-11-26T15:20:10+01:00"
+        }
     ]
 }

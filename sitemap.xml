@@ -369,10 +369,6 @@
 <lastmod>2026-11-23T11:31:45+01:00</lastmod>
 </url>
 <url>
-<loc>https://pustkowo.org/nieopowiedziane-historie.html</loc>
-<lastmod>2026-11-10T22:11:50+01:00</lastmod>
-</url>
-<url>
 <loc>https://pustkowo.org/o-projekcie.html</loc>
 <lastmod>2026-11-20T14:02:13+01:00</lastmod>
 <image:image>
@@ -382,19 +378,31 @@
 </url>
 <url>
 <loc>https://pustkowo.org/pod-powierzchnia.html</loc>
-<lastmod>2026-11-16T23:58:56+01:00</lastmod>
-<image:image>
-<image:loc>https://pustkowo.org/media/posts/29/bts_postcards.jpg</image:loc>
-<image:title><![CDATA[Dawna pocztówka przedstawiająca plażę w Pustkowie z żaglówkami]]></image:title>
-</image:image>
-<image:image>
-<image:loc>https://pustkowo.org/media/posts/29/bts_untold_stories_2.jpg</image:loc>
-<image:title><![CDATA[Fragment dawnej mapy wybrzeża Pomorza]]></image:title>
-</image:image>
+<lastmod>2026-11-26T14:55:05+01:00</lastmod>
 </url>
 <url>
-<loc>https://pustkowo.org/przeszlosc-z-pocztowek.html</loc>
-<lastmod>2026-11-17T00:22:56+01:00</lastmod>
+<loc>https://pustkowo.org/what-the-postcards-left-out.html</loc>
+<lastmod>2026-11-26T15:20:10+01:00</lastmod>
+<image:image>
+<image:loc>https://pustkowo.org/media/posts/32/pustchow-hauptstrasse-from-east-1938-2.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://pustkowo.org/media/posts/32/pustchow-hauptstrasse-viewpoints-map-1938.jpg</image:loc>
+<image:title><![CDATA[Mapa Pustchow z 1938 roku z zaznaczonymi miejscami wykonania trzech pocztówek]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://pustkowo.org/media/posts/32/pustchow-hauptstrasse-from-west-c1925-2.jpg</image:loc>
+<image:title><![CDATA[Pocztówka z ulicą Hauptstraße w Pustchow, około 1925 roku, piaszczysta droga z brzozami]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://pustkowo.org/media/posts/32/pustchow-hauptstrasse-dorf-idyll-c1933.jpg</image:loc>
+<image:title><![CDATA[Pocztówka Dorf-Idyll, około 1933 roku, trzy osoby idące piaszczystą ulicą wsi]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://pustkowo.org/media/posts/32/pustchow-hauptstrasse-from-east-1938.jpg</image:loc>
+<image:title><![CDATA[Pocztówka z Hauptstraße w Pustchow, 1938 rok, tablica z nazwą wsi, maszty i pusty ogród gospody]]></image:title>
+</image:image>
 </url>
 <url>
 <loc>https://pustkowo.org/zrodla-i-materialy.html</loc>
